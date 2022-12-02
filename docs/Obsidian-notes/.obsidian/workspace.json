@@ -1,0 +1,147 @@
+{
+  "main": {
+    "id": "9a714e41bad2039f",
+    "type": "split",
+    "children": [
+      {
+        "id": "87cc2cd737d0d4c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "720ffd4fc5be95bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Use Cases.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "191af0f1f9024f0b",
+    "type": "split",
+    "children": [
+      {
+        "id": "1c24f118a1959118",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c0dff2bbffca5a98",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e4e48219256a9e80",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e3f52f259757abbf",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fed607eab4193a98",
+    "type": "split",
+    "children": [
+      {
+        "id": "c379a6491b4cd99b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8ec1b83f710c42a1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Use Cases.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "05f9ccedbdcc64f7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Use Cases.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "69d64b2c1a3b1e1d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "af141911d28d7c71",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Use Cases.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "720ffd4fc5be95bb",
+  "lastOpenFiles": [
+    "Module Federation.md",
+    "overrides.md",
+    "Dynamic Remote Containers.md",
+    "container.md",
+    "Use Cases.md"
+  ]
+}
