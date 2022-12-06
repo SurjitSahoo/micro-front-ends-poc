@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import RemoteApp from './remoteApp';
 import remoteApps from './remoteApps.json';
+import RouteHandler from './routeHandler';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
               </Link>
             ))}
             <Routes>
-              <Route path='/test/*' element={<div>test route</div>} />
+              <Route path='/test' element={<div>test route</div>} />
               <Route path='/:remoteApp/*' element={<RemoteApp />} />
+              <Route path='*' element={<RouteHandler />} />
             </Routes>
           </BrowserRouter>
         </div>

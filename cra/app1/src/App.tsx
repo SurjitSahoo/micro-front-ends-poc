@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hello from './mf/hello';
+import AppRoutes from './mf/routes';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path='/test' element={<div>test route</div>} />
           </Routes>
+          <AppRoutes />
         </BrowserRouter>
       </div>
     </div>

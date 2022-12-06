@@ -12,7 +12,7 @@ export default function AppRoutes() {
         link 2
       </Link>
       {/* <img src={image} alt='my pic' /> */}
-      <div className='my-10 text-green-700'>
+      <div className='my-10 text-green-700' style={{ color: 'red' }}>
         <Routes>
           {/* TODO: Check with images and other assets */}
           <Route index element={<div>App 1 Home</div>} />
