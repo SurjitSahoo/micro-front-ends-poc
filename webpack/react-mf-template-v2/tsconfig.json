@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "sourceMap": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "moduleResolution": "node"
+  },
+  "include": ["src/**/*"]
+}

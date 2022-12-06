@@ -8,3 +8,7 @@
   e.g. `app1/src/routes.tsx` and `app2/src/routes.tsx` will cause problem.
 - public folder assets not loading from remote.
 - Remote app urls are not bookmark-able
+
+
+## What about dynamic expose ??
+https://github.com/module-federation/enhanced can help.

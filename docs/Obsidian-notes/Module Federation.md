@@ -115,7 +115,8 @@ new ModuleFederationPlugin({
   I have no idea what the hell is this!!!! 🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨
 
 - `import: string | false`
-  I have no idea what the hell is this!!!! 🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨🧨
+  - Setting this false means host will not import that particular library from the remote, the host has to provide the dependency.
+  - If we provide a string, it is used as a fallback library from the remote, in case the host fails to provide the dependency.
 
 ### More Examples
 ```js
