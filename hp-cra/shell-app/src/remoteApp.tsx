@@ -15,12 +15,12 @@ interface Props {
 
 function RemoteApp({ app }: Props) {
   const { Component: RemoteComponent, isError } = useFederatedComponent(app);
-  // const { Component: Hello } = useFederatedComponent({ ...app, moduleToImport: './hello' });
+  const { Component: Hello } = useFederatedComponent({ ...app, moduleToImport: './hello' });
 
   return (
     <div className='mx-2 my-3 ring-2 ring-yellow-400 p-2'>
       <Suspense fallback='loading...'>
-        {/* {Hello && <Hello />} */}
+        {Hello && <Hello />}
         {isError ? (
           <div>
             Error loading {app.moduleToImport} from {app.appName}
