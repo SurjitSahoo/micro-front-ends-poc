@@ -9,7 +9,7 @@ import './index.scss';
 const App = () => {
   return (
     <div className='pt-10 text-3xl mx-auto max-w-6xl bg-gray-600 text-white min-h-screen'>
-      <div>Name: Shell-App</div>
+      <div>Name: Webpack Shell-App</div>
       <div>Framework: react 18</div>
       <div>Language: TypeScript</div>
       <div>CSS: Tailwind</div>

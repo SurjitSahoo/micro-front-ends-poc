@@ -1,19 +1,9 @@
-import React, { ComponentType, LazyExoticComponent, Suspense, useEffect, useMemo } from 'react';
+import { Suspense, useMemo } from 'react';
 import { useParams } from 'react-router-dom';
 import useFederatedComponent from './dynamicModuleFederation';
 import remoteApps from './remoteApps.json';
 
-interface IDynamicModule {
-  remoteUrl: string;
-  moduleToImport: string;
-  appName: string;
-}
-
-interface Props {
-  app: IDynamicModule;
-}
-
-function RemoteApp({ app }: Props) {
+function RemoteApp({ app }) {
   const { Component: RemoteComponent, isError } = useFederatedComponent(app);
   const { Component: Hello } = useFederatedComponent({ ...app, moduleToImport: './hello' });
 
