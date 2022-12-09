@@ -5,7 +5,7 @@ module.exports = {
 	filename: "remoteEntry.js",
 	exposes: {
 		'./hello': "./src/mf/hello.js",
-		'./AppRoutes': "./src/mf/routes.js"
+		// './AppRoutes': "./src/mf/routes.js"
 	},
 	remotes: {},
 	shared: {

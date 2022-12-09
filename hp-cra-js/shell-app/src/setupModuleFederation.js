@@ -6,11 +6,11 @@ module.exports = {
 	exposes: {
 		// './hello': "./src/mf/hello.js",
 		// './AppRoutes': "./src/mf/routes.js"
-		"./App": "./src/App.js"
+		// "./App": "./src/App.js"
 	},
 	remotes: {
 		app1: "app1@http://localhost:3001/remoteEntry.js",
-		app2: "app2@http://localhost:3002/remoteEntry.js",
+		// app2: "app2@http://localhost:3002/remoteEntry.js",
 	},
 	shared: {
 		...dependencies,
