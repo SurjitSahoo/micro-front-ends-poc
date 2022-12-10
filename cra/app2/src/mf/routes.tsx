@@ -1,4 +1,5 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import 'index.css';
 
 export default function AppRoutes() {
   return (

@@ -5,7 +5,7 @@ module.exports = {
 	filename: 'remoteEntry.js',
 	exposes: {
 		'./hello': './src/mf/hello.tsx',
-		'./AppRoutes': './src/mf/routes.tsx'
+		'./AppRoutes': './src/mf/app1routes.tsx'
 	},
 	remotes: {},
 	shared: {
@@ -20,5 +20,9 @@ module.exports = {
 			singleton: true,
 			requiredVersion: dependencies["react-dom"],
 		},
+		"react-router-dom": {
+			singleton: true,
+			requiredVersion: dependencies["react-router-dom"]
+		}
 	}
 }

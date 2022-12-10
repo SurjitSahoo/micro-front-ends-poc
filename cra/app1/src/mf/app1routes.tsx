@@ -1,5 +1,6 @@
 import { Routes, Route, Link } from 'react-router-dom';
-// import image from '../assets/images/image.JPG';
+import image from 'assets/images/image.jpg';
+import 'index.css';
 
 export default function AppRoutes() {
   return (
@@ -11,7 +12,7 @@ export default function AppRoutes() {
       <Link to='route2' className='text-blue-600'>
         link 2
       </Link>
-      {/* <img src={image} alt='my pic' /> */}
+      <img src={image} alt='my pic' className='max-h-80' />
       <div className='my-10 text-green-700' style={{ color: 'red' }}>
         <Routes>
           {/* TODO: Check with images and other assets */}

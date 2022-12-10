@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Hello from './mf/hello';
-import AppRoutes from './mf/routes';
+import AppRoutes from './mf/app1routes';
 
 function App() {
   return (

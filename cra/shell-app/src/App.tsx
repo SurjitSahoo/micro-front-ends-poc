@@ -20,8 +20,8 @@ function App() {
               </Link>
             ))}
             <Routes>
-              <Route path='/test' element={<div>test route</div>} />
-              <Route path='/:remoteApp/*' element={<RemoteApp />} />
+              <Route path='/test/' element={<div>test route</div>} />
+              <Route path=':remoteApp/*' element={<RemoteApp />} />
               <Route path='*' element={<RouteHandler />} />
             </Routes>
           </BrowserRouter>
