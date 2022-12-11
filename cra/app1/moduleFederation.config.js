@@ -7,7 +7,9 @@ module.exports = {
 		'./hello': './src/mf/hello.tsx',
 		'./AppRoutes': './src/mf/app1routes.tsx'
 	},
-	remotes: {},
+	remotes: {
+		"redux": "central_redux_store@http://localhost:4001/remoteEntry.js"
+	},
 	shared: {
 		...dependencies,
 		react: {
