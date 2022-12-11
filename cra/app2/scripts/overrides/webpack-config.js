@@ -10,8 +10,7 @@ const override = config => {
 
   if (fs.existsSync(path.join(__dirname, mfConfigPath))) {
     config.plugins.push(new ModuleFederationPlugin(require(mfConfigPath)));
-    // config.output.publicPath = 'auto';
-    config.output.publicPath = 'http://localhost:3002/';
+    config.output.publicPath = 'auto';
   }
 
   return config;
