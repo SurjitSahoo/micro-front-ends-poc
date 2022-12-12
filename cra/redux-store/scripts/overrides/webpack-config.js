@@ -5,11 +5,14 @@ const path = require('path');
 const webpackConfigPath = 'react-scripts/config/webpack.config';
 const webpackConfig = require(webpackConfigPath);
 
+const { FederatedTypesPlugin } = require('@module-federation/typescript');
+
 const override = config => {
   const mfConfigPath = '../../moduleFederation.config.js'
 
   if (fs.existsSync(path.join(__dirname, mfConfigPath))) {
-    config.plugins.push(new ModuleFederationPlugin(require(mfConfigPath)));
+    const federationConfig = require(mfConfigPath);
+    config.plugins.push(new FederatedTypesPlugin({ federationConfig }));
     config.output.publicPath = 'auto';
   }
 
