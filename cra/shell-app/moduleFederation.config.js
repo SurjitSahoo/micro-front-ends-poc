@@ -4,7 +4,9 @@ module.exports = {
 	name: 'shell-app', // change me
 	filename: 'remoteEntry.js',
 	exposes: {},
-	remotes: {},
+	remotes: {
+		"redux": "central_redux_store@http://localhost:4001/remoteEntry.js"
+	},
 	shared: {
 		...dependencies,
 		react: {

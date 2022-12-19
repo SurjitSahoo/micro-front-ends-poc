@@ -5,13 +5,25 @@ const path = require('path');
 const webpackConfigPath = 'react-scripts/config/webpack.config';
 const webpackConfig = require(webpackConfigPath);
 
+/**
+ * @returns {string}
+ */
+function getPublicPath() {
+  let publicPath = 'auto';
+  const providedPath = process.env.PUBLIC_URL;
+
+  if (providedPath && providedPath.length >= 0 && providedPath.startsWith('http')) {
+    publicPath = providedPath.endsWith('/') ? providedPath : providedPath + '/';
+  }
+  return publicPath
+}
+
 const override = config => {
   const mfConfigPath = '../../moduleFederation.config.js'
 
   if (fs.existsSync(path.join(__dirname, mfConfigPath))) {
     config.plugins.push(new ModuleFederationPlugin(require(mfConfigPath)));
-    // config.output.publicPath = 'auto';
-    config.output.publicPath = 'http://localhost:3002/';
+    config.output.publicPath = getPublicPath();
   }
 
   return config;

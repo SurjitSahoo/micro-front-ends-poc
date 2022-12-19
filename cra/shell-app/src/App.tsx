@@ -3,14 +3,31 @@ import RemoteApp from './remoteApp';
 import remoteApps from './remoteApps.json';
 import RouteHandler from './routeHandler';
 
+// @ts-ignore
+import { useCount } from 'redux/store';
+
 function App() {
+  const { count, clear } = useCount();
+
   return (
     <div className='bg-gray-600 pt-10 text-white min-h-screen'>
       <div className='max-w-6xl text-3xl mx-auto'>
-        <div>Name: Shell App CRA</div>
-        <div>Framework: react</div>
-        <div>Language: TypeScript</div>
-        <div className='mb-10'>CSS: Tailwind</div>
+        <div className='mb-10 flex'>
+          <div>
+            <div>Name: Shell App CRA</div>
+            <div>Framework: react</div>
+            <div>Language: TypeScript</div>
+            <div>CSS: Tailwind</div>
+          </div>
+          <div className='ring-2 ring-pink-300 rounded ml-12 px-4 text-2xl flex flex-col items-center justify-center'>
+            <div className='text-xl'>Centralized Redux stuff</div>
+            <div className=' font-semibold'>Count: {count}</div>
+
+            <button onClick={clear} className='bg-slate-400 text-white px-4 mt-4 rounded'>
+              Clear
+            </button>
+          </div>
+        </div>
 
         <div className='mt-10'>
           <BrowserRouter>
